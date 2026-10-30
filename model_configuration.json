@@ -1,0 +1,28 @@
+{
+  "params": {
+    "objective": "binary:logistic",
+    "tree_method": "hist",
+    "max_depth": 10,
+    "eta": 0.05,
+    "min_child_weight": 1,
+    "lambda": 1.0,
+    "scale_pos_weight": 1,
+    "max_delta_step": 1,
+    "subsample": 0.9,
+    "colsample_bytree": 0.9,
+    "max_bin": 512,
+    "seed": 42,
+    "nthread": 1
+  },
+  "rounds": 400,
+  "raw_threshold": 0.1588377058506012,
+  "calibrated_threshold": 0.22850130040418198,
+  "calibration": {
+    "method": "sigmoid",
+    "a": 1.1343608862447834,
+    "b": null,
+    "intercept": 0.6740749548179885
+  },
+  "model_sha256": "9c80ab480d72a9e3e2fe435f0d45b2597510b5e74b9de0f054f715b17a1a0157",
+  "test_used_for_threshold": false
+}

@@ -1,0 +1,31 @@
+{
+  "model_name": "Day-Ahead XGBoost Forecast",
+  "model_sha256": "9c80ab480d72a9e3e2fe435f0d45b2597510b5e74b9de0f054f715b17a1a0157",
+  "feature_count": 66,
+  "supported_reclosers": [
+    "ANILAWAN",
+    "BALTAN",
+    "BINUAN",
+    "BUNCAG",
+    "CHARIOT",
+    "FACTOR",
+    "KALIKASAN",
+    "LACSAMANA",
+    "MACASAET",
+    "MAGARWAK",
+    "MANALO",
+    "MENDOZA",
+    "MONTIBLE",
+    "PENRO",
+    "PILTEL",
+    "RESUMA",
+    "SALVACION",
+    "SAN MANUEL",
+    "SOLID",
+    "SOLOMON",
+    "STA. MONICA"
+  ],
+  "medium_min_percent": 5.0,
+  "high_min_percent": 22.850130040418197,
+  "scope": "."
+}

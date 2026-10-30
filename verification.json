@@ -1,0 +1,12 @@
+{
+  "validation": {
+    "rows": 1782,
+    "percentages_warnings_risk_labels_replay_exact": true
+  },
+  "test": {
+    "rows": 1411,
+    "percentages_warnings_risk_labels_replay_exact": true
+  },
+  "model_unchanged": true,
+  "dataset_accounting_and_lineage_verified": true
+}

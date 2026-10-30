@@ -1,0 +1,34 @@
+{
+  "training_rows": 15935,
+  "training_outages": 785,
+  "training_non_outages": 15150,
+  "metrics": {
+    "validation": {
+      "precision": 0.6410256410256411,
+      "recall": 0.78125,
+      "F1": 0.704225352112676,
+      "ROC_AUC": 0.9460178571428571,
+      "average_precision": 0.7106647082947805,
+      "Brier_score": 0.008437746578394262,
+      "TP": 25,
+      "FP": 14,
+      "FN": 7,
+      "TN": 1736,
+      "threshold": 0.22850130040418198
+    },
+    "test": {
+      "precision": 0.620253164556962,
+      "recall": 0.8596491228070176,
+      "F1": 0.7205882352941176,
+      "ROC_AUC": 0.9855658348233952,
+      "average_precision": 0.8210813315197376,
+      "Brier_score": 0.01495087533188926,
+      "TP": 49,
+      "FP": 30,
+      "FN": 8,
+      "TN": 1324,
+      "threshold": 0.22850130040418198
+    }
+  
+  }
+}
