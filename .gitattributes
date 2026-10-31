@@ -1,0 +1,6 @@
+
+# Preserve generated artifacts byte for byte.
+*.pdf binary
+*.png binary
+*.joblib binary
+*.npz binary

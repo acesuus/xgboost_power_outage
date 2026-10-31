@@ -1,0 +1,83 @@
+{
+  "training_rows": 15935,
+  "training_positives": 785,
+  "threshold": 0.34064591089460045,
+  "calibration": {
+    "method": "sigmoid",
+    "a": 1.1364218273895075,
+    "intercept": 0.6785921718141223
+  },
+  "metrics": {
+    "validation": {
+      "precision": 0.7333333333333333,
+      "recall": 0.6875,
+      "F1": 0.7096774193548387,
+      "ROC_AUC": 0.9460178571428571,
+      "average_precision": 0.7106647082947805,
+      "Brier_score": 0.008435311804363202,
+      "TN": 1742,
+      "FP": 8,
+      "FN": 10,
+      "TP": 22
+    },
+    "test": {
+      "precision": 0.7076923076923077,
+      "recall": 0.8070175438596491,
+      "F1": 0.7540983606557377,
+      "ROC_AUC": 0.9855658348233952,
+      "average_precision": 0.8210813315197376,
+      "Brier_score": 0.014950024649561217,
+      "TN": 1335,
+      "FP": 19,
+      "FN": 11,
+      "TP": 46
+    }
+  },
+  "verification": {
+    "shared_columns_exactly_equal": 65,
+    "labels_source": "git HEAD:datasets/data.csv",
+    "labels_source_sha256": "d8171538e2df7ad469c43aff43fbc81610aab0429130321b0ff3e3a66626e37e",
+    "feature_source_sha256": "069899ef46d4308605b348303b58a1017097f86e956c18bb829793c048f2c252",
+    "evaluation_matches": [
+      {
+        "split": "validation",
+        "rows": 1782,
+        "max_replay_error": 1.1102230246251565e-16
+      },
+      {
+        "split": "test",
+        "rows": 1411,
+        "max_replay_error": 1.1102230246251565e-16
+      }
+    ],
+    "exact_feature_overlap_train_evaluation": false,
+    "serialized_model_replay_passed": true,
+    "original_model_unchanged": true,
+    "training_dates_verified": false,
+    "booster_json_identical_to_archived": true
+  },
+  "limitations": [
+  ],
+  "protocol": {
+    "params": {
+      "objective": "binary:logistic",
+      "tree_method": "hist",
+      "max_depth": 10,
+      "eta": 0.05,
+      "min_child_weight": 1,
+      "lambda": 1.0,
+      "scale_pos_weight": 1,
+      "max_delta_step": 1,
+      "subsample": 0.9,
+      "colsample_bytree": 0.9,
+      "max_bin": 512,
+      "seed": 42,
+      "nthread": 1
+    },
+    "rounds": 400,
+    "training_weights": "uniform",
+    "calibration": "validation sigmoid on raw logit; LogisticRegression C=1e6",
+    "threshold_selection": "maximum validation F1; first maximum",
+    "preprocessing": "refitted only on reconstructed training partition"
+  }
+}

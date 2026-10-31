@@ -10,7 +10,8 @@ from scipy.special import expit, logit
 from xgboost import DMatrix
 
 HERE = Path(__file__).resolve().parent
-SCHEMA = json.loads((HERE/'feature_schema.json').read_text(encoding='utf-8'))
+DEFAULT_MODEL_DIRECTORY = HERE / 'models' / 'retrained'
+SCHEMA = json.loads((DEFAULT_MODEL_DIRECTORY/'feature_schema.json').read_text(encoding='utf-8'))
 FEATURES = SCHEMA['features']
 META = SCHEMA['metadata']
 CALENDAR = ['day_of_week','is_weekend','day_of_year_sin','day_of_year_cos','month_sin','month_cos']
@@ -46,7 +47,7 @@ def calibrate(raw, parameters):
 
 
 class OutageForecast:
-    def __init__(self, directory=HERE):
+    def __init__(self, directory=DEFAULT_MODEL_DIRECTORY):
         self.directory = Path(directory)
         self.manifest = json.loads((self.directory/'model_manifest.json').read_text())
         path = self.directory/'model.joblib'

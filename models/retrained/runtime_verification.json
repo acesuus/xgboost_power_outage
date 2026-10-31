@@ -1,0 +1,15 @@
+{
+  "default_model": "models/retrained",
+  "checks": {
+    "validation": {
+      "rows_probability_replay": 1782,
+      "runtime_smoke_test_passed": true
+    },
+    "test": {
+      "rows_probability_replay": 1411,
+      "runtime_smoke_test_passed": true
+    }
+  },
+  "readme_links_exist": true,
+  "smoke_metadata": "Constructed for runtime testing only; does not attest historical provenance."
+}

@@ -1,0 +1,29 @@
+{
+  "params": {
+    "objective": "binary:logistic",
+    "tree_method": "hist",
+    "max_depth": 10,
+    "eta": 0.05,
+    "min_child_weight": 1,
+    "lambda": 1.0,
+    "scale_pos_weight": 1,
+    "max_delta_step": 1,
+    "subsample": 0.9,
+    "colsample_bytree": 0.9,
+    "max_bin": 512,
+    "seed": 42,
+    "nthread": 1
+  },
+  "rounds": 400,
+  "raw_threshold": null,
+  "calibrated_threshold": 0.34064591089460045,
+  "calibration": {
+    "method": "sigmoid",
+    "a": 1.1364218273895075,
+    "intercept": 0.6785921718141223
+  },
+  "model_sha256": "9f2502332f735087ae8909e42c6d213d76360fb72633cf0116e409038de73637",
+  "test_used_for_threshold": false,
+  "threshold_selection": "Maximum validation F1; frozen before test scoring",
+  "raw_threshold_note": "Use calibrated_threshold; raw threshold is not used by this runtime."
+}
